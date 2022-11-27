@@ -40,14 +40,8 @@
 #link a {
   color: var(--color-font);
   text-decoration: none;
-  font-size: 23px;
+  font-size: 22.5px;
   font-weight: bold;
-}
-
-#link p {
-  color: var(--color-font);
-  text-decoration: none;
-  font-size: 20px;
 }
 
 @media (max-width: 600px) {
