@@ -1,0 +1,70 @@
+:root {
+    --color-font: #000;
+    --color-body: #fff;
+    --color-label: #000;
+    --color-ball: #fff;
+  }
+  
+body {
+  background-color: var(--color-body);
+  margin: 0;
+  transition: 0.2s;
+}
+
+#button {
+  padding-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+  background-color: var(--color-label);
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  position: relative;
+  height: 26px;
+  width: 50px;
+  transform: scale(1.5);
+
+}
+
+.label .ball {
+  background-color: var(--color-ball);
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 22px;
+  width: 22px;
+  transform: translateX(0px);
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(24px);
+}
+
+.fa-moon {
+  color: #f1c40f;
+}
+
+.fa-sun {
+  color: #f39c12;
+}
+
+.active:root {
+    --color-font: white;
+    --color-body: rgb(31, 31, 31);
+    --color-label: white;
+    --color-ball: rgb(31, 31, 31);
+}

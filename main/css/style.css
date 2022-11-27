@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
+  border: 0;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+#currentTime {
+  color: var(--color-font);
+  font-size: 120px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#currentDate {
+  color: var(--color-font);
+  font-size: 25px;
+  font-family: 'Open Sans', sans-serif;
+}
