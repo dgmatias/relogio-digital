@@ -31,15 +31,23 @@
 #link {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
+  flex-direction: column;
   height: 5vh;
+  padding-bottom: 1rem;
 }
 
 #link a {
   color: var(--color-font);
   text-decoration: none;
-  font-size: 20px;
+  font-size: 23px;
   font-weight: bold;
+}
+
+#link p {
+  color: var(--color-font);
+  text-decoration: none;
+  font-size: 20px;
 }
 
 @media (max-width: 600px) {
@@ -55,7 +63,7 @@
     font-family: 'Open Sans', sans-serif;
   }
 
-  #link a {
+  #link p, a {
     font-size: 15px;
   }
 }
