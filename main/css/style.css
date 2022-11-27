@@ -27,3 +27,17 @@
   font-size: 25px;
   font-family: 'Open Sans', sans-serif;
 }
+
+@media (max-width: 600px) {
+  #currentTime {
+    color: var(--color-font);
+    font-size: 50px;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  #currentDate {
+    color: var(--color-font);
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+  }
+}
